@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WBDV111 - Group 7</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css'><link rel="stylesheet" href="./style.css">
+ 
+</head>
+<body>
+
+<body>
+    <section class="home">
+      <div class="description">
+        <h1 class="title">
+          <span class="gradient-text">Bloom &</span> Gloom
+        </h1>
+        <p class="paragraph">
+          To keep up with the latest gardening and landscape ideas, you may register an account using the form below.
+        </p>
+        <form id="form" autocomplete="off">
+          <input
+            type="email"
+            id="email-id"
+            name="email_address"
+            aria-label="email adress"
+            placeholder=""
+            required
+            oninput="checkEmpty()" />
+          <button type="submit" class="btn" aria-label="submit">
+            <span>Register</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </form>
+      </div>
+
+      <div class="users-color-container">
+        <span class="item" style="--i: 1"></span>
+        <a href="https://raw.githubusercontent.com/pasebast/wbdvrepo/main/wbdvpic01.png">
+        <img
+          class="item"
+          src="https://raw.githubusercontent.com/pasebast/wbdvrepo/main/bng.png"
+          style="--i: 2"
+          alt="" />
+        </a>
+        <span class="item" style="--i: 3"></span>
+        <img
+          class="item"
+          src="https://raw.githubusercontent.com/pasebast/wbdvrepo/main/bng.png"
+          style="--i: 4"
+          alt="" />
+
+        <img
+          class="item"
+          src="https://raw.githubusercontent.com/pasebast/wbdvrepo/main/bng.png"
+          style="--i: 10"
+          alt="" />
+        <span class="item" style="--i: 11"></span>
+        <img class="item" src="https://raw.githubusercontent.com/pasebast/wbdvrepo/main/bng.png" style="--i: 12" alt="" />
+        <span class="item" style="--i: 5"></span>
+
+        <span class="item" style="--i: 9"></span>
+        <img class="item" src="https://raw.githubusercontent.com/pasebast/wbdvrepo/main/bng.png" style="--i: 8" alt="" />
+        <span class="item" style="--i: 7"></span>
+        <img class="item" src="https://raw.githubusercontent.com/pasebast/wbdvrepo/main/bng.png" style="--i: 6" alt="" />
+      </div>
+    </section>
+
+    <section class="card-container" id="card-container">
+      <div class="slider">
+        <div class="card" data-tilt>
+          <div class="content">
+            <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/10088b1a-c0aa-42a9-8dff-1a692eb597d6" alt="" />
+            <h1>Home</h1>
+            <p>
+              Text pang home
+            </p>
+            <button class="btn btn-grad">
+              <span>Learn More</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="card" data-tilt>
+          <div class="content">
+            <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/69fb8584-66a0-4ecd-bae5-dd00015a1ad5" alt="" />
+            <h1>Our Services</h1>
+            <p>
+              Text pang sample ng services
+            </p>
+            <button class="btn btn-grad">
+              <span>Learn More</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="card" data-tilt>
+          <div class="content">
+            <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/d49bdb0f-c717-4063-abe4-869cb3bc8b4e" alt="" />
+            <h1>Portfolio</h1>
+            <p>
+              Text pang Portfolio
+            </p>
+            <button class="btn btn-grad">
+              <span>Learn More</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="card" data-tilt>
+          <div class="content">
+            <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/fd1d57e3-de8a-438a-9e9a-952ae65a776e" alt="" />
+            <h1>Testimonials</h1>
+            <p>
+              Text pang feedback ng customer
+            </p>
+            <button class="btn btn-grad">
+              <span>Learn More</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="card" data-tilt>
+          <div class="content">
+            <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/331836c0-0d28-48d1-a1c2-b5f5db87fe17" alt="" />
+            <h1>About Us</h1>
+            <p>
+              Text mission vision
+            </p>
+            <button class="btn btn-grad">
+              <span>Learn More</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="card" data-tilt>
+          <div class="content">
+            <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/2d022825-47f9-4e6a-bc97-14b47dc3242f" alt="" />
+            <h1>Contact Us</h1>
+            <p>
+              Contact Details
+            </p>
+            <button class="btn btn-grad">
+              <span>Learn More</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <ul class="control" id="custom-control">
+        <li class="prev">
+          <ion-icon class="arrow" name="caret-back-outline"></ion-icon>
+        </li>
+        <li class="next">
+          <ion-icon class="arrow" name="caret-forward-outline"></ion-icon>
+        </li>
+      </ul>
+    </section>
+  </body>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+<script src='https://unpkg.com/scrollreveal'></script><script  src="./script.js"></script>
+
+</body>
+</html>
