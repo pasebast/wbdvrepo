@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://raw.githubusercontent.com/pasebast/wbdvrepo/main/bng.png" alt="Logo" class="logo">
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      
+      <div class="form-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the <a href="tac.html" target="_blank">Terms and Conditions</a></label>
+      </div>
+      <div class="form-group">
+        <a href="registercomp.html">
+        <input type="button" id="registerButton" value="Register" disabled>
+      </a>
+      </div>
+    </form>
+  </div>
+
+  <a href="index.html" class="home-button">Return to Home</a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var registerButton = document.getElementById("registerButton");
+      var usernameInput = document.getElementById("username");
+      var emailInput = document.getElementById("email");
+      var passwordInput = document.getElementById("password");
+      var termsCheckbox = document.getElementById("terms");
+
+      // Function to check if all fields are completed
+      function checkFields() {
+        if (usernameInput.value !== "" && emailInput.value !== "" && passwordInput.value !== "" && termsCheckbox.checked) {
+          registerButton.disabled = false; // Enable the register button
+        } else {
+          registerButton.disabled = true; // Disable the register button
+        }
+      }
+
+      // Event listeners to check fields on input change
+      usernameInput.addEventListener("input", checkFields);
+      emailInput.addEventListener("input", checkFields);
+      passwordInput.addEventListener("input", checkFields);
+      termsCheckbox.addEventListener("change", checkFields);
+    });
+  </script>
+</body>
+</html>

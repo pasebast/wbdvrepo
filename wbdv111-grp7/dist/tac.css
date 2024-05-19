@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffcccc, #cc99ff); /* Pastel gradient background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container ul li {
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  margin-top: 20px;
+}
+
+.checkbox label {
+  font-size: 14px;
+}
+
+.register-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff9999; /* Pastel pink button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #ff6666; /* Darker pink on hover */
+}
